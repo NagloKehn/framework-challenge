@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starship Velociraptor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* Scoped placeholder + caret styles for the signup form */
+        #signup-form .form-control::placeholder { color: rgba(255,255,255,0.6) !important; opacity: 1; }
+        #signup-form .form-control { caret-color: #ffffff; }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100" style="background-image: url('Images/jonathan-young-starship-velociraptor.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+    <main class="container py-5" style="padding-top: 6rem;">
+        <header class="text-center mb-4">
+            <div class="d-inline-block px-3 py-2 rounded" style="background-color: rgba(0,0,0,0.5);">
+                <h1 class="mb-0 text-white">Starship Velociraptor</h1>
+                <p class="lead mb-0 text-white-50">Sign up for updates and exclusive early access to our cruises.</p>
+            </div>
+        </header>
+
+        <section class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="p-4 rounded" style="background-color: rgba(0,0,0,0.85);">
+                <form id="signup-form" action="#" method="post" novalidate class="text-white">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label text-white">Full name</label>
+                        <input type="text" class="form-control bg-transparent text-white" id="fullName" name="name" placeholder="Your Name" required style="border:1px solid rgba(255,255,255,0.25);">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white">Email address</label>
+                        <input type="email" class="form-control bg-transparent text-white" id="email" name="email" placeholder="you@example.com" required aria-describedby="emailHelp" style="border:1px solid rgba(255,255,255,0.25);">
+                        <div id="emailHelp" class="form-text text-white-50">We'll only use your email to send cruise updates and offers.</div>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-primary btn-lg">Get Boarding Pass</button>
+                    </div>
+                </form>
+
+                <p class="small text-white-50 mt-3">By signing up you agree to receive occasional marketing emails. Unsubscribe anytime.</p>
+                <small class="d-block text-white-50 mt-2 text-center">&copy; Starship Velociraptor</small>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
